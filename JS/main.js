@@ -1,4 +1,5 @@
 
-$(document).ready(function() {
-    $(".images-container").lightGallery(); 
-});
+lightbox.option({
+  'resizeDuration': 200,
+  'wrapAround': true
+})
