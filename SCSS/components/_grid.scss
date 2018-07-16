@@ -1,0 +1,10 @@
+
+
+.main-wrapper {
+  @include inset-block(80%);
+}
+
+.images-containter {
+  @include flex($wrap: wrap, $just: space-between);
+  @include center-align();
+}

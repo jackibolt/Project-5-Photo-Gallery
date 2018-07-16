@@ -1,0 +1,24 @@
+
+
+img {
+  width: 100%;
+}
+
+@for $i from 1 through $total-pics {
+  .img-#{$i} {
+    @include center-align(100%);
+      margin-top: 25px;
+      margin-bottom: 25px;
+      width: 85%;
+    @include mediaQ(small) {
+      width: 38%;
+    }
+    @include mediaQ(medium) {
+      width: 28%;
+    }
+    @include mediaQ(wide){
+      width: 21%
+    }
+
+  }
+}
