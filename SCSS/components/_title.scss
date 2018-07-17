@@ -3,4 +3,14 @@ h1 {
   @include center-align();
   margin-top: 50px;
   margin-bottom: 30px;
+  font-size: 40px;
+}
+
+.secondary {
+  margin-right: 30px;
+  font-weight: bold;
+}
+
+.sub {
+  margin-bottom: 30px;
 }
