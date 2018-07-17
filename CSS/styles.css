@@ -278,6 +278,10 @@ img {
   }
 }
 
+.lb-data .lb-caption {
+  font-size: 20px;
+}
+
 .main-wrapper {
   width: 80%;
   margin: auto;
