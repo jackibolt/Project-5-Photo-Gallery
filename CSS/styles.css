@@ -644,12 +644,21 @@ img {
 }
 
 input {
-  width: 50%;
+  width: 40%;
   margin: auto;
   padding-left: 10px;
   border: grey 2px solid;
   border-radius: 3px;
   height: 40px;
+}
+
+button {
+  border: black 1px solid;
+  border-radius: 3px;
+  background-color: lightgrey;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 h1 {

@@ -5,17 +5,9 @@ lightbox.option({
   'albumLabel': '',
 })
 
-// Search Bar
 
-const search;
-const title;
-const caption;
-
-
-
-// while (true) {
-//   search = document.getElementById('#search')
-//   if {
-//     search.toLowerCase() ===
-//   }
-// }
+      const $input = $('#search_input');
+      console.log($input);
+      const $filter = $input.val().toLowerCase();
+      console.log($filter);
+      

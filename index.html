@@ -19,13 +19,15 @@
     </div>
         <!-- Search Bar -->
     <div class="search">
-      <input type="text" id="search" name="search" placeholder="search for images here">
-
+      <!-- <input type="text" id="search" name="search" placeholder="type your search here"> -->
+      <input id="search_input" name="search" placeholder="type your search here" type="text" data-list=".list">
+      <!-- <button type="button" id="search-button" name="search-button">Search</button> -->
       </form>
     </div>
 
         <!-- Images Grid -->
-    <div class="images-containter">
+    <div class="images-containter list">
+      <!-- <p id="no-results" style=display:none;>No results</p> -->
       <div class="img-1">
         <a href="photos/01.jpg" data-lightbox="gallery" data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
           <img src='photos/thumbnails/01.jpg' alt="Hay Bales">
@@ -105,6 +107,7 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   <script src="JS/lightbox/js/lightbox.js"></script>
+  <script type="text/javascript" src="JS/hideseek/jquery.hideseek.min.js"></script>
   <script src="JS/main.js"></script>
 </body>
 </html>
