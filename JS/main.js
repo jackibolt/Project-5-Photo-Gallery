@@ -3,42 +3,35 @@ lightbox.option({
   'resizeDuration': 200,
   'wrapAround': true,
   'albumLabel': '',
-})
+});
 
-// function live_search() {
+// SEARCH BAR
 
-$('.search').keyup(function(){
-  console.log(event.target);
+const $img_list = $('.list a');
+const $search = $('#search_input');
 
-      //Image-box Variable
-    const $thumbnail = $('.list a');
+const filter = function (){
+      //Search Input variable
+      //'this' will call the target of the filter function ($search), at the bottom.
+    const $input = this.value.toLowerCase();
+    console.log($input);
 
-    $thumbnail.each(function(index, element){
-      console.log(event.target);
-        //Search Input variables
-      const $input = $('#search_input').val(); //get input
-      const $input_value = $input.toLowerCase(); //return lowercase
-      console.log($input_value)
-
+    $img_list.each(function(index, a){
         //Caption variables
-      const $attr = $(element).attr('data-title'); //get attr
+      const $attr = $(a).attr('data-title'); //get attr
       const $caption = $attr.toLowerCase(); //return lowercase
       console.log($caption);
 
-        //Image Variable
-      const $img = $('.image');
-      // console.log($img);
-
-        Filter
-      if ($caption.includes($input_value)){
+      if ($caption.includes($input)){
           // Display matching results
-        $img.style.display = "";
+        a.style.display = "block";
         console.log('yes');
 
       } else {         // Hide non-matching results
-        $img.style.display = "none";
+        a.style.display = "none";
         console.log('no');
       }
     });
+};
 
-});
+$search.on('keyup', filter);

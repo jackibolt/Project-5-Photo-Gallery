@@ -20,6 +20,7 @@
 
 // Media Query
 @mixin mediaQ ($break) {
+
   @if $break == 'small' {
     @media (min-width: $brk-small) {
       @content;

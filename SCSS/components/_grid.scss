@@ -1,11 +1,20 @@
 
 
 .main-wrapper {
-  @include inset-block(80%);
+  @include inset-block(90%);
 }
 
 .images-containter {
-  @include flex($wrap: wrap, $just: space-between);
-  @include center-align();
+  @include flex($dir: row, $wrap: wrap, $just: space-around);
   max-width: 1440px;
+  @include mediaQ(small){
+    @include center-align(90%);
+  }
+  @include mediaQ(medium){
+    @include center-align(80%);
+  }
+  @include mediaQ(wide){
+    @include inset-block(85%);
+  }
+
 }

@@ -1,14 +1,14 @@
 
 img {
-  width: 100%;
+  width: 200px;
+  border-radius: 5px;
 }
 
 @for $i from 1 through $total-pics {
   .img-#{$i} {
-    @include center-align(100%);
+    @include center-align(85%);
       margin-top: 25px;
       margin-bottom: 25px;
-      width: 85%;
     @include mediaQ(small) {
       width: 38%;
     }
@@ -18,10 +18,12 @@ img {
     @include mediaQ(wide){
       width: 21%
     }
-
   }
 }
 
 .lb-data .lb-caption {
-  font-size: 20px;
+  font-size: 14px;
+  @include mediaQ(medium){
+    font-size: 20px;
+  }
 }

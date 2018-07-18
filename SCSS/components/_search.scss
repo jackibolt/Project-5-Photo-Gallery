@@ -1,22 +1,25 @@
 
 .search {
-  @include center-align(80%);
+  @include center-align(100%);
   margin-bottom: 50px;
 }
 
 input {
-  @include inset-block(40%);
+  @include inset-block(80%);
   padding-left: 10px;
   border: grey 2px solid;
   border-radius: 3px;
   height: 40px;
+  @include mediaQ(wide){
+    @include inset-block(60%)
+  }
 }
-
-button {
-  border: black 1px solid;
-  border-radius: 3px;
-  background-color: lightgrey;
-  height: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
+//
+// button {
+//   border: black 1px solid;
+//   border-radius: 3px;
+//   background-color: lightgrey;
+//   height: 40px;
+//   padding-left: 10px;
+//   padding-right: 10px;
+// }
