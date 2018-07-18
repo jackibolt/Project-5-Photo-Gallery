@@ -635,6 +635,7 @@ img {
   justify-content: space-between;
   text-align: center;
   margin: auto;
+  max-width: 1440px;
 }
 
 .search {

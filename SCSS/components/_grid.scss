@@ -7,4 +7,5 @@
 .images-containter {
   @include flex($wrap: wrap, $just: space-between);
   @include center-align();
+  max-width: 1440px;
 }
