@@ -24,12 +24,16 @@ $('.search').keyup(function(){
     const $caption = $attr.toLowerCase();
     console.log($caption);
 
+      //Image Variable
+    const $img = $('a img');
+    console.log($img);
+
       //Filter
     if ($caption.includes($input_value)){
-      // a.style.display = '';
+      $img.style.display = '';
       console.log('yes');
     } else {
-      // a.style.display = 'none';
+      $img.css("display","none")
       console.log('no');
     }
   });
