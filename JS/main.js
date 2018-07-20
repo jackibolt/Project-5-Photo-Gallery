@@ -24,11 +24,11 @@ const filter = function (){
 
       if ($caption.includes($input)){
           // Display matching results
-        a.style.display = "block";
+        a.parentElement.style.display = "block";
         console.log('yes');
 
       } else {         // Hide non-matching results
-        a.style.display = "none";
+        a.parentElement.style.display = "none";
         console.log('no');
       }
     });
